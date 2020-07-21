@@ -5,15 +5,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "generate": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
+    "apollo-boost": "^0.4.9",
+    "bootstrap-vue": "^2.15.0",
     "core-js": "^3.6.5",
+    "graphql": "^15.3.0",
     "vue": "^2.6.11",
-    "vue-class-component": "^7.2.3",
-    "vue-property-decorator": "^8.4.2"
+    "vue-apollo": "^3.0.3"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "1.17.0",
     "@types/jest": "^24.0.19",
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-typescript": "~4.4.0",
@@ -21,6 +25,12 @@
     "@vue/cli-service": "~4.4.0",
     "@vue/test-utils": "^1.0.3",
     "typescript": "~3.9.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "@graphql-codegen/typescript": "1.17.0",
+    "@graphql-codegen/typescript-operations": "1.17.0",
+    "@graphql-codegen/typescript-graphql-files-modules": "1.17.0",
+    "@graphql-codegen/typescript-document-nodes": "1.17.0",
+    "@graphql-codegen/fragment-matcher": "1.17.0",
+    "@graphql-codegen/introspection": "1.17.0"
   }
 }
